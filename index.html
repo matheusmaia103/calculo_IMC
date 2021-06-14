@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule seu IMC grátis</title>
+    <link rel="stylesheet" href="IMC.css">
+    <script defer src="calculo.js"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/1163favIcon.ico">
+
+</head>
+<body>
+
+     <div id="container">
+        <div id="intro">
+            <h1>Calculo de IMC</h1>
+            <p>O cáculo do seu IMC pode revelar muito sobre sua saúde de acordo com seu peso e altura, com ele é possível previnir ou diagnosticar a obesidade, que por sua vez é identificada através de níveis.</p>
+        </div>
+            <table>
+                <tr class="title">
+                    <td>IMC</td>
+                    <td>Classificação</td>
+                </tr>
+                <tr>
+                    <td>Menor do que 18,5</td>
+                    <td>Abaixo do peso normal</td>
+                </tr>
+                <tr>
+                    <td>18,6 - 24,9</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr>
+                    <td>25 - 29,9</td>
+                    <td>Excesso de peso</td>
+                </tr>
+                <tr>
+                    <td>30 - 34,9</td>
+                    <td>Obesidade classe I</td>
+                </tr>
+                <tr>
+                    <td>35 - 39,9</td>
+                    <td>Obesidade classe II</td>
+                </tr>
+                <tr>
+                    <td>Maior ou igual a 40</td>
+                    <td>Obesidade classe III</td>
+                </tr>
+            </table>
+
+            <form action="#">
+                <label for="peso">Peso(Kg)
+                    <input type="text" autocomplete="off" placeholder="Ex: 70 Kg" id="peso" >
+                </label>
+                <label for="altura">Altura(cm)
+                    <input type="text" autocomplete="off" placeholder="Ex: 170 cm" id="altura" >
+                </label>
+
+                <label for="sexo" id="sexoLabel">Sexo:
+                    <select name="sexo" id="sexo">
+                        <option value="homem">Homem</option>
+                        <option value="mulher" >Mulher</option>
+                    </select>
+                </label>
+
+                <button type="button" onclick="calcular()"> Calcular </button>
+
+                <span></span>
+            </form>
+    </div>
+</body>
+</html>

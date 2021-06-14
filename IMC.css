@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --primary-color: #1d2366;
+    --secundary-color: #068E06;
+}
+
+*{
+    margin: 0;
+    outline: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    user-select:var(--secundary-color)!important;
+}
+
+img{
+    display: none;
+    min-width: 100px;
+    max-width: 1000px;
+}
+
+#container{
+    background-color: var(--primary-color);
+    background-image: url(img/26595.png);
+    color: white;    
+    max-width: 700px;
+
+
+    padding: 30px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 35px;
+
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+}
+
+td{
+    border: solid 1px;
+    padding: 5px;
+
+    padding: 10px;
+
+}
+
+
+form{
+    display:block;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type = text]{
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+    width: 75%;
+
+    transition: 0.1s ease;
+
+    font-size:small;
+}
+
+label select{
+    width: 75%;
+    padding: 6px;
+    
+    font-size: inherit;
+    
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+.error{
+    border: 2px solid red!important;
+
+}
+
+.striped{
+    background-color: #d4f5e0;
+    
+}
+
+
+.labelError{
+    color: red!important;
+    font-weight: bolder;
+}
+
+#sexoLabel{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: var(--secundary-color);
+    background-image: url(img/fundoButton.png);
+
+    padding: 20px;
+    
+    border-radius: 40px;
+    border:1px solid var(--secundary-color);
+
+    width: 100%;
+    margin-top: 15px;
+    
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+tr:hover{
+    border: 1px solid black
+}
+
+input:focus{
+    border: solid;
+    border-color: var(--secundary-color);
+    
+}
+
+button:active{
+    transform: scale(0.97);
+}
+
+
+@media (max-width: 700px){
+    #container{
+        width: 100%;
+        max-width: 900px;
+
+
+    }
+}
+
+@media (max-width: 1105px){
+    body{
+        background-image: url("img/fundoNovo.svg");
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+@media (min-width: 1130px){
+    body{
+        display: block;
+
+        background-image: url("img/fundoNovo.svg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left;
+        background-size: 60%;
+    }
+
+    #container{
+        float: right;
+        max-width: 600px;
+
+    }
+
+}
