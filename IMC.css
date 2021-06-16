@@ -16,6 +16,7 @@
 
 body{
     background-color: white;
+    background-repeat:no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,10 +172,10 @@ button:active{
     }
 }
 
-@media (max-width: 1105px){
+@media (max-width: 1130px){
     body{
         background-image: url("img/fundoNovo.svg");
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
     }
