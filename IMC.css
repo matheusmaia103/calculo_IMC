@@ -19,7 +19,11 @@
 }
 
 body{
-    background-color: red;
+    background-color: #1d2366;
+}
+
+body{
+    background-color: white;
     background-repeat:no-repeat;
     display: flex;
     align-items: center;
